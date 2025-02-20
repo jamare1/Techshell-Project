@@ -184,7 +184,7 @@ ShellCommand ParseCommandLine(char* input) {
         }
     }
 
-    if(count == 0){  
+    if(count == 0 || (count == 1 && strlen(command.args[0]) == 0)){  
         command.args[0] = NULL;  // Ensure args[0] is NULL if no command is entered
     }
     else{
