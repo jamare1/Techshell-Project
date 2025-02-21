@@ -1,11 +1,11 @@
-🚀 TechShell - A Custom Unix Shell
+TechShell - A Custom Unix Shell
 
 Author: Jack Revelett  
 Date: 2/19/2025  
 
 ---
 
-## 1️⃣ Description of How the Shell Works
+## Description of How the Shell Works
 TechShell is a simple Unix-based shell that allows users to execute commands, manage input and output redirection, and navigate directories. 
 
 The shell works as follows:
@@ -30,24 +30,24 @@ The shell works as follows:
 
 ---
 
-## 2️⃣ Features Implemented
-✅ **Custom Command Prompt** – Displays the current working directory.  
-✅ **Command Execution** – Runs system commands using `execvp()`.  
-✅ **Input Redirection (`<`)** – Reads input from specified files.  
-✅ **Output Redirection (`>`)** – Redirects command output to files.  
-✅ **Handles Errors** – Manages invalid commands, file permissions, and execution failures.  
-✅ **Built-in Commands:**  
+## Features Implemented
+ **Custom Command Prompt** – Displays the current working directory.  
+ **Command Execution** – Runs system commands using `execvp()`.  
+ **Input Redirection (`<`)** – Reads input from specified files.  
+ **Output Redirection (`>`)** – Redirects command output to files.  
+ **Handles Errors** – Manages invalid commands, file permissions, and execution failures.  
+ **Built-in Commands:**  
    - `cd` – Change directories.  
    - `exit` – Exit the shell.  
 
 
 ---
 
-## 3️⃣ Unimplemented / Partially Working Features
-⚠ **NOT Implemented:**
+## Unimplemented / Partially Working Features
+ **NOT Implemented:**
 - **Piping (`|`)** – Cannot chain commands together like `ls | grep txt`.
 - **Background Execution (`&`)** – All commands run in the foreground.
 - **No Signal Handling (`Ctrl+C`)** – Does not properly terminate, instead ends application.
 
-⚠ **PARTIALLY Implemented:**
+ **PARTIALLY Implemented:**
 - **Quoted Arguments in `cd`** – Handles `"Directory Name"` but may break with complex cases.
